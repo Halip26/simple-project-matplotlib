@@ -32,9 +32,9 @@ plt.yticks(list(range(-3, 20, 3)))
 ax.legend(["1st rep", "2nd rep", "3rd rep", "4th rep"])
 
 # anotate command helps to write on the graphs at any xy denotes
-plt.annotate("Temperature V/s Days", xy=(1.01, -2, 15))
+plt.annotate("Temperature V/s Days", xy=(1.01, -2.15))
 
 # Title
 plt.title("Day - Temperature Line Graph")
 
-plt.plot()
+plt.show()
