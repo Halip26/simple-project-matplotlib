@@ -1,8 +1,7 @@
-import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
-# Plotting the merah-putih colours in national flag
+# Plotting the merah-putih colors in national flag
 merah = patches.Rectangle(
     (0, 3), width=6, height=2, facecolor="#FF0000", edgecolor="grey"
 )
