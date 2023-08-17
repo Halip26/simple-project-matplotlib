@@ -1,18 +1,19 @@
 import numpy as np
-import matplotlib.pyplot as py
-import matplotlib.patches as patch
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
 # Plotting the merah-putih colours in national flag
-merah = patch.Rectangle(
+merah = patches.Rectangle(
     (0, 3), width=6, height=2, facecolor="#FF0000", edgecolor="grey"
 )
-putih = patch.Rectangle(
+putih = patches.Rectangle(
     (0, 1), width=6, height=2, facecolor="#FFFFFF", edgecolor="grey"
 )
-a, b = py.subplots()
 
-b.add_patch(merah)
-b.add_patch(putih)
+fig, ax = plt.subplots()
 
-py.axis("equal")
-py.show()
+ax.add_patch(merah)
+ax.add_patch(putih)
+
+plt.axis("equal")
+plt.show()
