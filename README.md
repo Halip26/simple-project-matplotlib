@@ -109,3 +109,31 @@ Baris 35-36: Menentukan posisi label sumbu y dan judul subplot keempat.
 Baris 38: Menampilkan hasil dari semua subplot yang sudah dibuat.
 
 Sehingga, kode di atas menciptakan subplot di dalam sebuah objek figure dengan grid 2x2, dengan setiap plot memiliki data poin dan argumen lain yang berbeda untuk jenis simbol dan label sumbu. Hasilnya adalah sebuah figure yang menampilkan keempat subplot tersebut.
+
+## Displaying the red and white rectangle to express the 78th Indonesian Independence Day
+
+```python
+import matplotlib.pyplot as plt
+
+import matplotlib.patches as patches
+
+```
+
+Displaying the red and white rectangle to express the 78th Indonesian Independence Day using Python programming language with the matplotlib module
+Matplotlib is commonly used for data visualization.
+Happy 78th Indonesian Independence Day! Strong and Growing Indonesia for 78 years!
+Plotting the red and white rectangles of the national flag
+
+```python
+red = patches.Rectangle( (0, 3), width=6, height=2, facecolor="#FF0000", edgecolor="grey" ) 
+
+white = patches.Rectangle( (0, 1), width=6, height=2, facecolor="#FFFFFF", edgecolor="grey" )
+
+fig, ax = plt.subplots()
+
+ax.add_patch(red) 
+ax.add_patch(white)
+
+plt.axis("equal") 
+plt.show()
+```
